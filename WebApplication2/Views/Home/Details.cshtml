@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<p>  Animal info : @ViewBag.Currentuser    </p>
+
+<ul>
+
+    @foreach (var item in ViewBag.Logins)
+    {
+        <li> @item </li>
+    }
+
+</ul>
+

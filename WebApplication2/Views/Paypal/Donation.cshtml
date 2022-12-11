@@ -1,0 +1,257 @@
+﻿
+@{
+    ViewBag.Title = "Donation";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = null;
+}
+
+
+
+@*<h3>DONATION</h3>*@
+<h2></h2>
+<br />
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>SPCA MIDRAND - About</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="~/Themes/assets/img/favicon.jpg" rel="icon">
+    <link href="~/Themes/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/Themes/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Themes/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/Themes/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="~/Themes/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/Themes/assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/Themes/assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: PhotoFolio - v1.0.0
+    * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+
+
+    <style>
+
+
+        body {
+            background: #052c3f;
+            margin: 0;
+        }
+
+        .card {
+            justify-content: space-evenly;
+            display: inline-block;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin-bottom: 10px;
+            margin: 348px 15px;
+            margin-top: 10px;
+            margin-right: 48px;
+            margin-left: 248px 20px;
+            align-items: center;
+            text-align: center;
+            font-family: arial;
+            background-color: white;
+            font-weight: bold;
+            color: black;
+        }
+
+
+        .price {
+            color: #052c3f;
+            font-size: 22px;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #008B8B;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+            .card button:hover {
+                opacity: 0.7;
+            }
+
+        h3 {
+            color: white;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        img {
+            background-color: #808080;
+            color: #808080;
+            border-radius: 5px;
+        }
+    </style>
+
+
+    <!-- =======================================================
+    * Template Name: PhotoFolio - v1.0.0
+    * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+<body>
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+                <img src="~/Themes/assets/img/Gallery/logo.jpg" alt="SPCA MIDRAND">
+
+                <h1>SPCA MIDRAND</h1>
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="/Home/Index">Home</a></li>
+                    <li><a href="/About/Index">About</a></li>
+                    @*<li class="dropdown">
+                            <a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                            <ul>
+                                <li><a href="/Gallery/Index">Nature</a></li>
+                                <li><a href="/Gallery/Index">People</a></li>
+                                <li><a href="/Gallery/Index">Architecture</a></li>
+                                <li><a href="/Gallery/Index">Animals</a></li>
+                                <li><a href="/Gallery/Index">Sports</a></li>
+                                <li><a href="/Gallery/Index">Travel</a></li>
+                                <li class="dropdown">
+                                    <a href="#"><span>Sub Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                    <ul>
+                                        <li><a href="#">Sub Menu 1</a></li>
+                                        <li><a href="#">Sub Menu 2</a></li>
+                                        <li><a href="#">Sub Menu 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>*@
+                    <li><a href="/Services/Index">Services</a></li>
+                    <li><a href="/Contact/Index">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-social-links">
+                <a href="https://twitter.com/midrandspca?lang=en" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/SPCAMidrand/" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        </div>
+    </header>
+
+    @*<h2 style="text-align:center">PRODUCT CARD</h2>*@
+
+    <div class="page-header d-flex align-items-center" style="background: #052c3f">
+        <div class="container position-relative" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7UjVRoSL8AQ7IDRp2nAJZkpVBAyYH3W6VHOPKh570bU5EsJL0hpyepUKP_kYGqFMkp7U&usqp=CAU)">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2>Product Cards</h2>
+                    <p>
+                       Donate to Midrand SPCA through one of the following platforms.
+                    </p>
+
+                    @*<a class="cta-btn" href="/Contact/Index" style="background: #708090">Adopt a Animal</a>*@
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="services" class="services d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+
+            <div class="row gy-4 d-flex align-items-center">
+
+                <div class="card-group" style="height: 20%; float: right">
+                    <div class="card align-items-center">
+                        @*~/Resources/Donner____.png*@
+                        <img src="https://www.pngitem.com/pimgs/m/29-299397_free-money-bag-clipart-hd-png-download.png" alt="Animal Medication Fund- Donation" style="height:160px">
+                        <h1>Animal Medication Fund- Donation</h1>
+                        <p class="price">$100.99</p>
+                        <p>This Fund Finances the expenses incurred from medication used on rescued Animals .</p>
+                        <p><button type="button" onclick="location.href='@Url.Action("Index_V2", "Paypal")' ">Make Donation</button></p>
+
+                    </div>
+
+                    <div class="card" style="height: 60%; float: right">
+                        @*~/Resources/Money_hand.png*@
+                        <img src="https://www.kindpng.com/picc/m/370-3702882_thai-money-cartoon-hd-png-download.png" alt="Dog Rescue Fund Donation" style="height:225px">
+                        <h1>Dog Rescue Fund Donation</h1>
+                        <p class="price">$79.99</p>
+                        <p>This Fund is utilized to fund deployment of Rescue Staff and resources required to rescue strays.</p>
+                        <p><button type="button" onclick="location.href='@Url.Action("Index_V1", "Paypal")'">Make Donation</button></p>
+                    </div>
+
+                    <div class="card" style="height:60%; float:right" >
+                        @*~/Resources/Donnater.jpg*@
+                        <img src="https://clipart.world/wp-content/uploads/2020/06/save-money-related.jpg" alt="Handicaped Care Fund" style="height:250px" />
+                        <h1>Handicapped Animal Fund</h1>
+                        <p class="price">$7.99</p>
+                        <p>Utilized to Fund the enhancment of care of Handicaped Animals.</p>
+                        <p><button type="button" onclick="location.href='@Url.Action("Index", "Paypal")'">Make Donation</button></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        @*<img src="https://media.istockphoto.com/id/1272394130/vector/charity-donation-box-with-coins-and-hearts.jpg?s=612x612&w=0&k=20&c=cqAoQdL0EuamFHTvBffiYRvRIPKJh8Ma95r_5PKtv3I=" alt="Importance of donation" style="height:250px; float:left" />*@
+    </section>
+
+    <br />
+    <br />
+
+    @*</body>
+        </html>*@
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader">
+        <div class="line"></div>
+    </div>
+
+
+    <script src="~/Themes/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Themes/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/Themes/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/Themes/assets/vendor/aos/aos.js"></script>
+    <script src="~/Themes/assets/vendor/php-email-form/validate.js"></script>
+
+
+    <script src="~/Themes/assets/js/main.js"></script>
+
+</body>
+
+</html>
